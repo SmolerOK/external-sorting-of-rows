@@ -35,7 +35,7 @@ function writeInFiles(path1, path2, string1, string2) {
 }
 
 //Разбиваем in.txt файл на равные части (не больше 250 Мб)
-splitFile.splitFileBySize(__dirname + '/in.txt', 250000000, __dirname + '/temp')
+splitFile.splitFileBySize(__dirname + '/in.txt', 262144000, __dirname + '/temp')
     .then((names) => {
 
         let isSorted = true;
